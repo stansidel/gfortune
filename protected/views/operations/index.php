@@ -41,7 +41,7 @@ $curFilter = Yii::app()->user->getState('operations_filter');
 if (empty($model)) {
     $model = new Operation();
     $model->type = "income";
-    $model->datetime = date('Y-m-d', mktime());
+    $model->datetime = date('Y-m-d', time());
 }
 $originalType = $model->type;
 Yii::app()->clientScript->registerCssFile('/css/operations.css');
