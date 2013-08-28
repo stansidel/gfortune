@@ -1,0 +1,16 @@
+<tbody>
+    {{#operations}}
+    <tr class="operation" id="op{{id}}">
+        <td>{{type}}</td>
+        <td>{{datetime}}</td>
+        <td>{{debitCategory.name}}</td>
+        <td>{{creditCategory.name}}</td>
+        <td>{{sum}}</td>
+        <td>{{comment}}</td>
+        <td>
+            <a href="/operations/update/{{id}}"><i class="icon-pencil"></i></a>
+            <a class="del-item" data-id="{{id}}" href="/operations/delete/{{id}}"><i class="icon-remove"></i></a>
+        </td>
+    </tr>
+    {{/operations}}
+</tbody>

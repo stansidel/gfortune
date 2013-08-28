@@ -1,0 +1,11 @@
+upload/
+images/
+/assets/*
+!/assets/\.touch
+protected/runtime/*
+!/protected/runtime/\.touch
+.idea/
+*.swp
+*.lock
+robots.txt
+/protected/config/dbsettings.php
